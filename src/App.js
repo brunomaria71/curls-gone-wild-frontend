@@ -24,11 +24,17 @@ function App() {
           <Content>
             <Routes>
               <Route path="/reviews/add" element={<ReviewPage />} />
+              <Route
+                path="/home"
+                element={
+                  <>
+                    {" "}
+                    <Hero /> <Home /> <HairCard />
+                  </>
+                }
+              />
             </Routes>
           </Content>
-          <Hero />
-          <Home />
-          <HairCard />
         </Layout>
       </UserContext.Provider>
     </BrowserRouter>
