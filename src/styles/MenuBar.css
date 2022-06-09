@@ -1,0 +1,20 @@
+.menubar {
+  padding: 20px;
+  /* display: flex; */
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  /* position: sticky; */
+  flex-direction: row;
+  background-color: #e15ce1;
+}
+
+.nav-links {
+  justify-content: space-evenly;
+  flex-direction: row;
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  background-color: aqua;
+  padding: 5px;
+}
