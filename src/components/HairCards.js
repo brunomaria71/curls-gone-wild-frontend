@@ -31,8 +31,18 @@ const HairCard = () => (
       }}
       cover={<img alt="example" src={image} width="200px" height="200px" />}
     >
-      <Meta title="wavy" description="hair is wavy" className="card" />
+      <Meta title="curly" description="hair is curly" className="card" />
     </Card>
+    {/* <Card
+      hoverable
+      style={{
+        width: 100,
+        height: 100,
+      }}
+      cover={<img alt="example" src={image2} width="200px" height="200px" />}
+    >
+      <Meta title="wavy" description="hair is wavy" className="card" />
+    </Card> */}
   </Col>
 );
 
