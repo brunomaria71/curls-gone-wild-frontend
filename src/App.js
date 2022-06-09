@@ -2,7 +2,7 @@ import { Layout } from "antd";
 import { createContext, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import HairCard from "./components/HairCards";
+import HairCards from "./components/HairCards";
 import Hero from "./components/Hero";
 import Home from "./components/Home";
 import Menubar from "./components/MenuBar";
@@ -29,7 +29,7 @@ function App() {
                 element={
                   <>
                     {" "}
-                    <Hero /> <Home /> <HairCard />
+                    <Hero /> <Home /> <HairCards />
                   </>
                 }
               />
