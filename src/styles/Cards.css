@@ -1,3 +1,32 @@
-.card {
-  background-color: aqua;
+.card-group {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  margin: 3em;
 }
+
+.card-images {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.card-meta-title {
+  background-color: rgb(167, 161, 161);
+  flex-direction: row;
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  padding: 5px;
+  width: 190px;
+}
+
+/* .curly-column {
+  flex-direction: row;
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  padding: 50px;
+  width: 190px;
+  background-color: blue;
+} */
