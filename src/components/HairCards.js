@@ -12,6 +12,7 @@ const HairCards = () => (
     <Col className="card-group">
       <div className="wavy-column">
         <Card
+          id="card1"
           hoverable
           cover={
             <img className="card-images" alt="wavy hair example" src={wavy} />
@@ -27,6 +28,7 @@ const HairCards = () => (
 
       <div className="curly-column">
         <Card
+          id="card1"
           hoverable
           cover={
             <img className="card-images" alt="curly hair example" src={curly} />
@@ -42,6 +44,7 @@ const HairCards = () => (
 
       <div className="coily-column">
         <Card
+          id="card1"
           hoverable
           cover={
             <img className="card-images" alt="curly hair example" src={coily} />

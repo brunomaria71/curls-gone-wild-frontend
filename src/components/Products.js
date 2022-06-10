@@ -8,7 +8,6 @@ export default function Products() {
       .then((data) => setProducts(data))
       .catch((err) => console.error(err));
   }, []);
-  console.log(products);
   return (
     <div>
       {!products ? (
