@@ -8,7 +8,7 @@ import "../styles/Cards.css";
 const { Meta } = Card;
 
 const HairCards = () => (
-  <div>
+  <div className="cards-overall">
     <Col className="card-group">
       <div className="wavy-column">
         <Card
