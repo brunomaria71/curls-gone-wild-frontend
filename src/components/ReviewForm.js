@@ -1,131 +1,67 @@
-import { Button, Form, Input } from "antd";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/ReviewForm.css";
 
-const layout = {
-  labelCol: {
-    span: 8,
-  },
-  wrapperCol: {
-    span: 16,
-  },
-};
+export default function ReviewFOrm() {
+  let navigate = useNavigate();
 
-// eslint-enable no-template-curly-in-string
+  const [newReview, setNewReview] = useState({
+    name: "",
+    reviewOfResults: "",
+  });
 
-const validateMessages = {
-  required: "${label} is required!",
-  types: {
-    email: "${label} is not a valid email!",
-  },
-};
+  const [error, setError] = useState("");
 
-// eslint-enable no-template-curly-in-string
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    fetch("https://curls-gone-wild.web.app/review", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newReview),
+    })
+      .then(() => navigate("/reviews"))
+      .catch(setError);
+  };
 
-export default function ReviewForm() {
-  const onFinish = (values) => {
-    console.log(values);
+  const handleChange = (e) => {
+    const newValue = e.target.value;
+    setNewReview({
+      ...newReview,
+      [e.target.name]: newValue,
+    });
   };
 
   return (
-    <Form
-      {...layout}
-      name="nest-messages"
-      onFinish={onFinish}
-      validateMessages={validateMessages}
-    >
-      <Form.Item
-        name={["user", "name"]}
-        label="Name"
-        rules={[
-          {
-            required: true,
-          },
-        ]}
-      >
-        <Input placeholder="name" />
-      </Form.Item>
-      <Form.Item
-        name={["user", "reviewBody"]}
-        label="Review"
-        rules={[
-          {
-            required: true,
-          },
-        ]}
-      >
-        <Input.TextArea placeholder="Review your results here. Please state whether the products and or the styling routines helped you or not!" />
-      </Form.Item>
-      <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>
-        <Button type="primary" htmlType="submit">
+    <section style={{ margin: "2em 1em" }}>
+      <h1>Add Review</h1>
+      {error && <h2 style={{ color: "red" }}>{error}</h2>}
+      <form onSubmit={handleSubmit}>
+        <label for="name">
+          Name:
+          <input
+            name="name"
+            type="text"
+            value={newReview.name}
+            onChange={handleChange}
+          />
+        </label>
+        <br />
+        <label for="reviewOfResults">
+          Review:
+          <input
+            name="reviewOfResults"
+            type="text"
+            value={newReview.reviewOfResults}
+            onChange={handleChange}
+          />
+        </label>
+        <br />
+        <button type="submit" onClick={() => handleSubmit()}>
           Submit
-        </Button>
-      </Form.Item>
-    </Form>
+        </button>
+      </form>
+    </section>
   );
 }
-
-// export default function ReviewForm() {
-
-//   const handlePost = () => {
-//     const [newReview, setNewReview] = useState('')
-
-//     const handlePost() => {
-//       name: "",
-//       reviewOfRoutine: "",
-//     };
-
-//     fetch("https://curls-gone-wild.web.app/reviews", {
-//       method: "POST",
-//       headers: {
-//         "Content-Type": "application/json",
-//       },
-//       body: JSON.stringify(newReview),
-//     })
-//       .then((response) => response.json())
-//       .then((data) => {
-//         setNewReview(data);
-//       })
-//       .catch((err) => console.log(err));
-//   };
-
-//   const onFinish = (values) => {
-//     console.log(values);
-//   };
-
-//   return (
-//     <Form
-//       {...layout}
-//       name="nest-messages"
-//       onFinish={onFinish}
-//       validateMessages={validateMessages}
-//     >
-//       <Form.Item
-//         name={["user", "name"]}
-//         label="Name"
-//         rules={[
-//           {
-//             required: true,
-//           },
-//         ]}
-//       >
-//         <Input placeholder="name" />
-//       </Form.Item>
-//       <Form.Item
-//         name={["user", "reviewBody"]}
-//         label="Review"
-//         rules={[
-//           {
-//             required: true,
-//           },
-//         ]}
-//       >
-//         <Input.TextArea placeholder="Review your results here. Please state whether the products and or the styling routines helped you or not!" />
-//       </Form.Item>
-//       <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>
-//         <Button type="primary" htmlType="submit" onClick={() => handlePost()}>
-//           Submit
-//         </Button>
-//       </Form.Item>
-//     </Form>
-//   );
-// }

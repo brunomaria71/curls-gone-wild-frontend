@@ -8,7 +8,6 @@ export default function ReviewPage() {
       .then((data) => setReviews(data))
       .catch((err) => console.error(err));
   }, []);
-  console.log(reviews);
   return (
     <div>
       {!reviews ? (
@@ -18,7 +17,7 @@ export default function ReviewPage() {
           return (
             <>
               <p>{reviews.name}</p>
-              <p>{reviews.reviewOfRoutine}</p>
+              <p>{reviews.reviewOfResults}</p>
             </>
           );
         })

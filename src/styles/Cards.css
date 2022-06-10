@@ -9,9 +9,10 @@
 
 .card-group {
   display: flex;
-  flex-direction: row;
-  width: 300px;
-  margin: 3em;
+  /* flex-direction: row; */
+  /* width: 300px; */
+  /* margin: 3em; */
+  justify-content: center;
 }
 
 .card-images {
@@ -39,3 +40,7 @@
   width: 190px;
   background-color: blue;
 } */
+
+#card1 {
+  margin: 80px;
+}
