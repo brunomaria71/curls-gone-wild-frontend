@@ -11,8 +11,9 @@ const Menubar = () => {
       <div className="nav-links">
         <>
           <a href="/home">Home</a>
-          <a href="/about">About</a>
+          <a href="/products">Products</a>
           <a href="/reviews/add">Add Review</a>
+          <a href="/reviews">See What Others Are Saying</a>
         </>
       </div>
     </nav>
