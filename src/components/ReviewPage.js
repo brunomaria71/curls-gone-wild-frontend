@@ -15,10 +15,10 @@ export default function ReviewPage() {
       ) : (
         reviews.map((reviews) => {
           return (
-            <>
+            <div key={reviews.id}>
               <p>{reviews.name}</p>
               <p>{reviews.reviewOfResults}</p>
-            </>
+            </div>
           );
         })
       )}
