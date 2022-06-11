@@ -8,11 +8,11 @@ import "../styles/Cards.css";
 const { Meta } = Card;
 
 export default function HairCards() {
-  let navigate = useNavigate();
+  // let navigate = useNavigate();
 
-  const handleSubmit = () => {
-    navigate("/resultpage");
-  };
+  // const handleSubmit = () => {
+  //   navigate("/resultpage")
+  // }
 
   return (
     <div className="cards-overall">

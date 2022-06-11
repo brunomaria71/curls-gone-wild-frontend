@@ -1,7 +1,9 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
+import { ResultsContext } from "../context/ResultsContext";
 
 export default function Products() {
-  const [products, setProducts] = useState();
+  const { products, setProducts } = useContext(ResultsContext);
+
   useEffect(() => {
     fetch("https://curls-gone-wild.web.app/products")
       .then((res) => res.json())
