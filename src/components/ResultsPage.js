@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Products from "./Products";
 
 export default function ResultsPage() {
   const [routines, setRoutines] = useState();
@@ -16,13 +17,13 @@ export default function ResultsPage() {
       ) : (
         routines.map((routines) => {
           return (
-            <>
-              <p>{routines.type}</p>
+            <div key={routines.type}>
               <p>{routines.routine}</p>
-            </>
+            </div>
           );
         })
       )}
+      <Products />
     </div>
   );
 }

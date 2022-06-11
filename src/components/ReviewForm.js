@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/ReviewForm.css";
 
-export default function ReviewFOrm() {
+export default function ReviewForm() {
   let navigate = useNavigate();
 
   const [newReview, setNewReview] = useState({

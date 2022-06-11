@@ -16,8 +16,8 @@
 }
 
 .card-images {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   border-radius: 10px;
 }
 
@@ -29,6 +29,7 @@
   flex-direction: row;
   padding: 5px;
   width: 190px;
+  border-radius: 10px;
 }
 
 /* .curly-column {
