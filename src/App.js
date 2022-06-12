@@ -6,6 +6,7 @@ import ResultsPage from "./components/ResultsPage";
 import ReviewForm from "./components/ReviewForm";
 import ReviewPage from "./components/ReviewPage";
 import { ResultsContextProvider } from "./context/ResultsContext";
+import { UserChoiceContextProvider } from "./context/UserChoiceContext";
 import Home from "./scenes/Home";
 
 const { Header, Content } = Layout;
@@ -17,16 +18,18 @@ function App() {
         <Header>
           <Menubar />
         </Header>
-        <ResultsContextProvider>
-          <Content>
-            <Routes>
-              <Route path="/reviews/add" element={<ReviewForm />} />
-              <Route path="/reviews" element={<ReviewPage />} />
-              <Route path="/results" element={<ResultsPage />} />
-              <Route path="/home" element={<Home />} />
-            </Routes>
-          </Content>
-        </ResultsContextProvider>
+        <UserChoiceContextProvider>
+          <ResultsContextProvider>
+            <Content>
+              <Routes>
+                <Route path="/reviews/add" element={<ReviewForm />} />
+                <Route path="/reviews" element={<ReviewPage />} />
+                <Route path="/results" element={<ResultsPage />} />
+                <Route path="/home" element={<Home />} />
+              </Routes>
+            </Content>
+          </ResultsContextProvider>
+        </UserChoiceContextProvider>
       </Layout>
     </BrowserRouter>
   );
