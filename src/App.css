@@ -6,3 +6,7 @@ layout {
     rgba(252, 70, 231, 1) 100%
   );
 }
+
+.font-face {
+  font-family: "strawberry-font";
+}

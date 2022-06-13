@@ -1,11 +1,18 @@
 .menubar {
-  padding: 20px;
-  justify-content: space-around;
+  padding: 10px;
+  /* justify-content: space-around; */
   flex-wrap: wrap;
   align-items: center;
   flex-direction: row;
   background: transparent;
   color: white !important;
+  position: absolute;
+  z-index: 2;
+  backdrop-filter: blur(100px);
+  width: 100vw;
+  /* border-style: solid; */
+  /* border-color: black; */
+  box-shadow: 0 0 1.2rem rgb(194, 186, 186), 0 0 0.2rem rgb(194, 186, 186);
 }
 
 .nav-links {
