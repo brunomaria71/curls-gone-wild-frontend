@@ -34,7 +34,7 @@ export default function ReviewForm() {
   };
 
   return (
-    <section style={{ margin: "2em 1em" }}>
+    <section className="style">
       <h1>Add Review</h1>
       {error && <h2 style={{ color: "red" }}>{error}</h2>}
       <form onSubmit={handleSubmit}>
@@ -45,6 +45,7 @@ export default function ReviewForm() {
             type="text"
             value={newReview.name}
             onChange={handleChange}
+            required="true"
           />
         </label>
         <br />
@@ -55,6 +56,7 @@ export default function ReviewForm() {
             type="text"
             value={newReview.reviewOfResults}
             onChange={handleChange}
+            required="true"
           />
         </label>
         <br />

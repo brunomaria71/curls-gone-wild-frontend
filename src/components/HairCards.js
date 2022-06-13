@@ -85,7 +85,7 @@ export default function HairCards() {
                 className="card-images"
                 alt="curly hair example"
                 src={coily}
-                onClick={() => onClickCoily}
+                onClick={onClickCoily}
               />
             }
           >
