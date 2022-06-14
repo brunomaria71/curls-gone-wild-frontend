@@ -8,9 +8,9 @@
   background: rgb(217, 35, 35);
 }
 
-.site-layout-background {
-  background: rgb(219, 28, 28);
-}
+/* .site-layout-background {
+  background: red;
+} */
 
 .sidebar {
   z-index: 2;
@@ -20,4 +20,14 @@
   border-color: red;
   height: 200vh;
   background-color: grey;
+}
+
+a {
+  font-size: 35px;
+  /* align-self: center; */
+  /* text-indent: 50px; */
+}
+
+.nav-links {
+  padding: 0px;
 }
