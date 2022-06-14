@@ -1,5 +1,6 @@
 import { Layout, Menu } from "antd";
 import React from "react";
+import logo from "../assets/logo.jpg";
 import "../styles/Template.css";
 const { Sider } = Layout;
 
@@ -16,11 +17,14 @@ export default function Template() {
           console.log(collapsed, type);
         }}
       >
-        <div className="logo" />
+        <a href="/home">
+          <img className="logo" alt="logo of curls gone wild" src={logo} />
+        </a>
         <Menu>
-          <a href="/home">
-            <h1>Curls Gone Wild</h1>
-          </a>
+          {/* <a href="/home"> */}
+          {/* <h1>Curls Gone Wild</h1> */}
+          {/* <img className="logo" alt="logo of curls gone wild" src={logo} />
+          </a> */}
           <div className="nav-links">
             <a href="/home">Home</a>
             <a href="/reviews/add">Add Review</a>
@@ -31,17 +35,3 @@ export default function Template() {
     </Layout>
   );
 }
-
-// theme="dark"
-// mode="inline"
-// defaultSelectedKeys={["4"]}
-// items={[
-//   UserOutlined,
-//   VideoCameraOutlined,
-//   UploadOutlined,
-//   UserOutlined,
-// ].map((icon, index) => ({
-//   key: String(index + 1),
-//   icon: React.createElement(icon),
-//   label: `nav ${index + 1}`,
-// }))}

@@ -9,7 +9,9 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <h3>Choose ur hair type</h3>
+      <div className="checking">
+        <h3>Choose Your Hair Type</h3>
+      </div>
       <HairCards />
     </>
   );

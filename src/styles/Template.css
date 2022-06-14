@@ -14,20 +14,39 @@
 
 .sidebar {
   z-index: 2;
-  position: absolute;
+  position: fixed;
   display: block;
   border-style: solid;
   border-color: red;
-  height: 200vh;
-  background-color: grey;
+  height: 100vh;
+  background-color: #658076;
+  width: 9.5%;
 }
 
 a {
-  font-size: 35px;
-  /* align-self: center; */
-  /* text-indent: 50px; */
+  font-size: 2.5em;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
 }
 
 .nav-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50%;
+}
+
+.ant-menu {
+  height: 100vh;
+  border-style: solid;
+  border-color: black;
+  display: flex;
+  flex-direction: column;
   padding: 0px;
+}
+
+.logo {
+  width: 90%;
 }
