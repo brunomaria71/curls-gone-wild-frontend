@@ -14,7 +14,7 @@ const { Header, Content } = Layout;
 function App() {
   return (
     <BrowserRouter>
-      <Layout>
+      <Layout className="font-face">
         <Header>
           <Menubar />
         </Header>
