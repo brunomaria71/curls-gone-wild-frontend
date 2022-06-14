@@ -1,0 +1,23 @@
+#components-layout-demo-responsive .logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.site-layout-sub-header-background {
+  background: rgb(217, 35, 35);
+}
+
+.site-layout-background {
+  background: rgb(219, 28, 28);
+}
+
+.sidebar {
+  z-index: 2;
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: red;
+  height: 200vh;
+  background-color: grey;
+}

@@ -33,29 +33,3 @@ export default function Products() {
     </div>
   );
 }
-<<<<<<< HEAD
-
-// {
-//   _id:
-// 629e93411ef62a54272f7cf4
-// name
-// :
-// "Blueberry Bliss Reparative Hair Wash"
-// description
-// :
-// "Sulfate-free cleanser guaranteed to soften the driest kink, hydrate th..."
-// instructions
-// :
-// "Thoroughly soak hair in shower, detangle hair before shampooing for be..."
-// bestFor
-// :
-// "wavy"
-// type
-// :
-// "Shampoo"
-// image
-// :
-// "https://i5.walmartimages.com/asr/37e44f3a-db62-405b-af87-42c79dec13dd_..."
-// }
-=======
->>>>>>> f415e69c2aa954e085a58da6f4bd418b542e110c
