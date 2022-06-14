@@ -19,14 +19,16 @@
   border-style: solid;
   border-color: red;
   height: 100vh;
-  background-color: grey;
+  background-color: #658076;
+  width: 215px;
 }
 
 a {
   font-size: 2.5em;
-  /* align-self: center; */
-  /* text-indent: 50px; */
   text-decoration: none;
+  color: white;
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
 }
 
 .nav-links {
@@ -42,4 +44,10 @@ a {
   border-color: black;
   display: flex;
   flex-direction: column;
+  padding: 0px;
+}
+
+.logo {
+  height: 200px;
+  width: 215px;
 }
