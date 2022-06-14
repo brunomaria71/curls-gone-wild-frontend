@@ -12,5 +12,6 @@ h3 {
 }
 
 .checking {
-  border-
+  border-style: solid;
+  background-color: #fbf6ed;
 }
