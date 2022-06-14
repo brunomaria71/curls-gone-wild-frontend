@@ -1,8 +1,7 @@
-@font-face {
+/* @font-face {
   font-family: "strawberry-Font";
   src: local("strawberry-font"), url("./fonts/strawberry-font.ttf");
-  font-weight: bold;
-}
+} */
 
 body {
   margin: 0;
