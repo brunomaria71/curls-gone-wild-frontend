@@ -45,5 +45,3 @@ export default function Template() {
 //   icon: React.createElement(icon),
 //   label: `nav ${index + 1}`,
 // }))}
-
-,..

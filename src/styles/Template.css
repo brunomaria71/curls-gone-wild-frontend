@@ -14,20 +14,32 @@
 
 .sidebar {
   z-index: 2;
-  position: absolute;
+  position: fixed;
   display: block;
   border-style: solid;
   border-color: red;
-  height: 200vh;
+  height: 100vh;
   background-color: grey;
 }
 
 a {
-  font-size: 35px;
+  font-size: 2.5em;
   /* align-self: center; */
   /* text-indent: 50px; */
+  text-decoration: none;
 }
 
 .nav-links {
-  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50%;
+}
+
+.ant-menu {
+  height: 100vh;
+  border-style: solid;
+  border-color: black;
+  display: flex;
+  flex-direction: column;
 }
