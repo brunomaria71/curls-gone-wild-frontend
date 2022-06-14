@@ -33,6 +33,7 @@ export default function Products() {
     </div>
   );
 }
+<<<<<<< HEAD
 
 // {
 //   _id:
@@ -56,3 +57,5 @@ export default function Products() {
 // :
 // "https://i5.walmartimages.com/asr/37e44f3a-db62-405b-af87-42c79dec13dd_..."
 // }
+=======
+>>>>>>> f415e69c2aa954e085a58da6f4bd418b542e110c
