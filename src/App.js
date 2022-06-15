@@ -10,7 +10,6 @@ import Template from "./components/Template";
 import { ResultsContextProvider } from "./context/ResultsContext";
 import { UserChoiceContextProvider } from "./context/UserChoiceContext";
 import Home from "./scenes/Home";
-
 const { Header, Content } = Layout;
 
 function App() {

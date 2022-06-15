@@ -1,6 +1,10 @@
+import { Card, Col } from "antd";
+
 import { useContext, useEffect } from "react";
 import { ResultsContext } from "../context/ResultsContext";
 import { UserChoiceContext } from "../context/UserChoiceContext";
+
+const { Meta } = Card;
 
 export default function Products() {
   const { products, setProducts } = useContext(ResultsContext);
@@ -24,12 +28,47 @@ export default function Products() {
       ) : (
         products.map((product) => {
           return (
-            <div key={product._id}>
-              <p>{product.name}</p>
-            </div>
+            <Col key={product._id} style={{ width: "300px", margin: "0em" }}>
+              <Card
+                className="product-card"
+                loading={!product}
+                cover={
+                  <img
+                    className="images"
+                    alt={product?.name}
+                    src={product?.image}
+                  />
+                }
+                hoverable
+                style={{
+                  width: 240,
+                }}
+              >
+                <Meta
+                  title={product?.name}
+                  description={products?.description}
+                />
+              </Card>
+            </Col>
           );
         })
       )}
     </div>
   );
+}
+
+//ORIGINAL
+
+//ANT DESIGN VERSION
+
+{
+  /* <Col style={{ width: "300px", margin: "1em" }}>
+  <Card
+    loading={!product}
+    cover={product && <img alt={product?.name} src={product?.image} />}
+    hoverable
+  >
+    <Meta title={product?.name} description={products?.description} />
+  </Card>
+</Col>; */
 }

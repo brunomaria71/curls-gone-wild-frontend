@@ -3,8 +3,7 @@
   margin: 16px;
   background: rgba(255, 255, 255, 0.2);
 }
-
-.site-layout-sub-header-background {
+*/ .site-layout-sub-header-background {
   background: rgb(217, 35, 35);
 }
 
@@ -25,7 +24,8 @@ a {
   color: white;
   text-align: center;
   font-family: "Bebas Neue", cursive;
-}
+} 
+
 
 .ant-layout-sider {
   border-style: solid;

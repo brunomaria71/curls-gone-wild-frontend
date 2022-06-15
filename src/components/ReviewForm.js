@@ -35,35 +35,39 @@ export default function ReviewForm() {
 
   return (
     <section className="style">
-      <h1>Add Review</h1>
-      {error && <h2 style={{ color: "red" }}>{error}</h2>}
-      <form onSubmit={handleSubmit}>
-        <label for="name">
-          Name:
-          <input
-            name="name"
-            type="text"
-            value={newReview.name}
-            onChange={handleChange}
-            required="true"
-          />
-        </label>
-        <br />
-        <label for="reviewOfResults">
-          Review:
-          <input
-            name="reviewOfResults"
-            type="text"
-            value={newReview.reviewOfResults}
-            onChange={handleChange}
-            required="true"
-          />
-        </label>
-        <br />
-        <button type="submit" onClick={() => handleSubmit()}>
-          Submit
-        </button>
-      </form>
+      <h1 className="title">Add Review</h1>
+      <div className="content">
+        <form onSubmit={handleSubmit} className="form">
+          <label for="name">
+            Name:
+            <input
+              className="name-box"
+              name="name"
+              type="text"
+              value={newReview.name}
+              onChange={handleChange}
+              required="true"
+              rows="10"
+            />
+          </label>
+          <br />
+          <label for="reviewOfResults">
+            Review:
+            <input
+              className="review-box"
+              name="reviewOfResults"
+              type="text"
+              value={newReview.reviewOfResults}
+              onChange={handleChange}
+              required="true"
+            />
+          </label>
+          <br />
+          <button type="submit" onClick={() => handleSubmit()}>
+            Submit
+          </button>
+        </form>
+      </div>
     </section>
   );
 }

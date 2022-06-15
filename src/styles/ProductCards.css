@@ -1,0 +1,12 @@
+/* .images {
+  width: 100px;
+  display: flex;
+} */
+
+.product-card {
+  display: flex;
+}
+
+.test {
+  border-style: solid;
+}
