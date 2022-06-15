@@ -20,7 +20,7 @@
   border-color: red;
   height: 100vh;
   background-color: #658076;
-  width: 10.4%;
+  width: 120px;
 }
 
 a {
@@ -45,10 +45,10 @@ a {
   display: flex;
   flex-direction: column;
   padding: 0px;
-  width: 160px;
+  width: 120px;
   word-spacing: 25%;
 }
 
 .logo {
-  width: 80%;
+  width: 60%;
 }
