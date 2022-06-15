@@ -36,7 +36,6 @@ export default function ReviewForm() {
   return (
     <section className="style">
       <h1 className="title">Add Review</h1>
-      {error && <h2 style={{ color: "red" }}>{error}</h2>}
       <div className="content">
         <form onSubmit={handleSubmit} className="form">
           <label for="name">

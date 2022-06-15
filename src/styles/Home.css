@@ -9,6 +9,8 @@ h3 {
   word-spacing: 30px;
   letter-spacing: 15px;
   position: relative;
+  padding: 5px;
+  margin-top: 40px;
 }
 
 .checking {

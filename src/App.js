@@ -2,6 +2,7 @@ import { Layout } from "antd";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 // import Menubar from "./components/MenuBar";
+import "antd/dist/antd.css";
 import ResultsPage from "./components/ResultsPage";
 import ReviewForm from "./components/ReviewForm";
 import ReviewPage from "./components/ReviewPage";
@@ -9,7 +10,6 @@ import Template from "./components/Template";
 import { ResultsContextProvider } from "./context/ResultsContext";
 import { UserChoiceContextProvider } from "./context/UserChoiceContext";
 import Home from "./scenes/Home";
-
 const { Header, Content } = Layout;
 
 function App() {
