@@ -28,7 +28,8 @@ a {
 
 .ant-layout-sider {
   border-style: solid;
-  border-color: red;
+  border-color: black;
+  border-width: 5px;
   height: 100vh;
   z-index: 5;
 }
@@ -38,10 +39,6 @@ a {
 }
 
 .ant-layout-sider-dark {
-  flex: 0 0 200px;
-  max-width: 200px;
-  min-width: 200px;
-  width: 200px;
   height: 100vh;
   position: fixed;
   left: 0px;
