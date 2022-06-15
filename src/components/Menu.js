@@ -1,6 +1,6 @@
 import { Layout, Menu } from "antd";
 import logo from "../assets/logo.jpg";
-import "../styles/Template.css";
+import "../styles/Menu.css";
 const { Sider } = Layout;
 
 export default function Template() {

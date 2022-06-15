@@ -1,12 +1,11 @@
 import { Layout } from "antd";
+import "antd/dist/antd.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-// import Menubar from "./components/MenuBar";
-import "antd/dist/antd.css";
+import Menu from "./components/Menu";
 import ResultsPage from "./components/ResultsPage";
 import ReviewForm from "./components/ReviewForm";
 import ReviewPage from "./components/ReviewPage";
-import Template from "./components/Template";
 import { ResultsContextProvider } from "./context/ResultsContext";
 import { UserChoiceContextProvider } from "./context/UserChoiceContext";
 import Home from "./scenes/Home";
@@ -17,7 +16,7 @@ function App() {
     <BrowserRouter>
       <Layout>
         <Header>
-          <Template />
+          <Menu />
         </Header>
         <UserChoiceContextProvider>
           <ResultsContextProvider>
