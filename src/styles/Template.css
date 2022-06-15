@@ -8,45 +8,82 @@
   background: rgb(217, 35, 35);
 }
 
-/* .site-layout-background {
+.site-layout-background {
   background: red;
-} */
+}
 
-.sidebar {
+/* .sidebar {
   z-index: 2;
   position: fixed;
   display: block;
   border-style: solid;
   border-color: red;
   height: 100vh;
-  background-color: #658076;
+  background-color: #020403;
   width: 9.5%;
+}
+*/
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* height: 50%; */
+  background-color: #658076;
 }
 
 a {
-  font-size: 2.5em;
+  font-size: 2em;
   text-decoration: none;
   color: white;
   text-align: center;
   font-family: "Bebas Neue", cursive;
 }
 
-.nav-links {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 50%;
-}
-
-.ant-menu {
+/* .ant-menu {
   height: 100vh;
   border-style: solid;
   border-color: black;
   display: flex;
   flex-direction: column;
   padding: 0px;
+  z-index: 3;
+  display: block;
+} */
+
+.ant-layout-sider {
+  border-style: solid;
+  border-color: red;
+  height: 100vh;
+  border-color: orange;
+  border-color: orange;
+  z-index: 5;
 }
 
 .logo {
-  width: 90%;
+  width: 100%;
+}
+
+.ant-layout-sider-dark {
+  flex: 0 0 200px;
+  max-width: 200px;
+  min-width: 200px;
+  width: 200px;
+  height: 100vh;
+  /* margin-right: 0px; */
+  position: fixed;
+  left: 0px;
+}
+
+.ant-layout-sider-children {
+  border-style: solid;
+  border-color: black;
+  height: 100vh;
+  z-index: 5;
+  position: absolute;
+  background-color: #658076;
+}
+
+.ant-layout-header {
+  height: 0px;
 }

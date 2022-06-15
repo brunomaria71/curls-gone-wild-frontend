@@ -2,6 +2,7 @@ import { Layout } from "antd";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 // import Menubar from "./components/MenuBar";
+import "antd/dist/antd.css";
 import ResultsPage from "./components/ResultsPage";
 import ReviewForm from "./components/ReviewForm";
 import ReviewPage from "./components/ReviewPage";
