@@ -11,66 +11,55 @@
   background: red;
 }
 
-/* .sidebar {
-  z-index: 2;
-  position: fixed;
-  display: block;
-  border-style: solid;
-  border-color: red;
-  height: 100vh;
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #658076;
-  width: 120px;
-} */
+}
 
-/* a {
+a {
   font-size: 2em;
   text-decoration: none;
   color: white;
   text-align: center;
   font-family: "Bebas Neue", cursive;
-} */
+} 
 
-/* .nav-links {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 50%;
-} */
 
-.ant-menu {
-  z-index: 3;
+.ant-layout-sider {
+  border-style: solid;
+  border-color: red;
+  height: 100vh;
+  border-color: orange;
+  border-color: orange;
+  z-index: 5;
 }
 
 .logo {
   width: 100%;
 }
 
-/* .ant-layout-sider-children {
-  border-style: solid;
-  border-color: orange;
-  z-index: 2;
+.ant-layout-sider-dark {
+  flex: 0 0 200px;
+  max-width: 200px;
+  min-width: 200px;
+  width: 200px;
+  height: 100vh;
+  /* margin-right: 0px; */
   position: fixed;
-  display: block;
-  border-style: solid;
-  height: 100%;
-  background-color: #658076;
-  width: 125px;
- margin: 0px 0px 0px -47px; 
-} 
+  left: 0px;
+}
 
-/* .ant-layout-sider {
-  background-color: blueviolet;
-  max-width: 300px;
-} */
-/* 
+.ant-layout-sider-children {
+  border-style: solid;
+  border-color: black;
+  height: 100vh;
+  z-index: 5;
+  position: absolute;
+  background-color: #658076;
+}
+
 .ant-layout-header {
   height: 0px;
-}
-
-.ant-layout-sider {
-  background: #2487e6;
-}
-
-.ant-layout-sider-dark {
-  background-color: black;
 }
