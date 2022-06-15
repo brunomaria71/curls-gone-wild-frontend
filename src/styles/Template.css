@@ -12,23 +12,10 @@
   background: red;
 }
 
-/* .sidebar {
-  z-index: 2;
-  position: fixed;
-  display: block;
-  border-style: solid;
-  border-color: red;
-  height: 100vh;
-  background-color: #020403;
-  width: 9.5%;
-}
-*/
-
 .nav-links {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* height: 50%; */
   background-color: #658076;
 }
 
@@ -39,17 +26,6 @@ a {
   text-align: center;
   font-family: "Bebas Neue", cursive;
 }
-
-/* .ant-menu {
-  height: 100vh;
-  border-style: solid;
-  border-color: black;
-  display: flex;
-  flex-direction: column;
-  padding: 0px;
-  z-index: 3;
-  display: block;
-} */
 
 .ant-layout-sider {
   border-style: solid;
