@@ -9,7 +9,8 @@
   display: flex;
   justify-content: right;
   height: 600px;
-  margin-right: 40px;
+  /* margin-right: 40px; */
+  margin-left: 90px;
 }
 
 .card-images {
