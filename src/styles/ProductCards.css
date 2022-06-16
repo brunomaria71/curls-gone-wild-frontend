@@ -3,18 +3,16 @@
   display: flex;
 } */
 
-.product-card {
-  display: flex;
-}
-
-.test {
-  border-style: solid;
-}
-
 .help {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  order: 6;
+  /* order: 6; */
   align-items: center;
   gap: 10px;
+  padding-left: 240px;
+}
+
+.products-cards-group {
+  margin: 30px;
 }

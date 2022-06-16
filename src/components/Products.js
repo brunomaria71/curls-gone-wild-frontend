@@ -1,4 +1,5 @@
 import { Card, Col } from "antd";
+import "../styles/ProductCards.css";
 
 import { useContext, useEffect } from "react";
 import { ResultsContext } from "../context/ResultsContext";
@@ -26,12 +27,16 @@ export default function Products() {
       {!products ? (
         <h2>Loading...</h2>
       ) : (
-        products.map((product) => {
-          return (
-            <div className="help">
-              <Col key={product._id} style={{ width: "300px", margin: "20%" }}>
+        <div className="help">
+          {products.map((product) => {
+            return (
+              <Col
+                key={product._id}
+                // style={{ margin: "20%" }}
+                className="products-cards-group"
+              >
                 <Card
-                  className="product-card"
+                  // className="product-card"
                   loading={!product}
                   cover={
                     <img
@@ -51,9 +56,9 @@ export default function Products() {
                   />
                 </Card>
               </Col>
-            </div>
-          );
-        })
+            );
+          })}
+        </div>
       )}
     </div>
   );
