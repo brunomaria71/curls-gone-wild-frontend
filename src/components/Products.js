@@ -28,28 +28,30 @@ export default function Products() {
       ) : (
         products.map((product) => {
           return (
-            <Col key={product._id} style={{ width: "300px", margin: "0em" }}>
-              <Card
-                className="product-card"
-                loading={!product}
-                cover={
-                  <img
-                    className="images"
-                    alt={product?.name}
-                    src={product?.image}
+            <div className="help">
+              <Col key={product._id} style={{ width: "300px", margin: "20%" }}>
+                <Card
+                  className="product-card"
+                  loading={!product}
+                  cover={
+                    <img
+                      className="images"
+                      alt={product?.name}
+                      src={product?.image}
+                    />
+                  }
+                  hoverable
+                  style={{
+                    width: 240,
+                  }}
+                >
+                  <Meta
+                    title={product?.name}
+                    description={products?.description}
                   />
-                }
-                hoverable
-                style={{
-                  width: 240,
-                }}
-              >
-                <Meta
-                  title={product?.name}
-                  description={products?.description}
-                />
-              </Card>
-            </Col>
+                </Card>
+              </Col>
+            </div>
           );
         })
       )}

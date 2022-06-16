@@ -40,7 +40,7 @@ export default function ReviewForm() {
         <form onSubmit={handleSubmit} className="form">
           <label for="name">
             Name:
-            <input
+            {/* <input
               className="name-box"
               name="name"
               type="text"
@@ -48,7 +48,17 @@ export default function ReviewForm() {
               onChange={handleChange}
               required="true"
               rows="10"
-            />
+            /> */}
+            <textarea
+              name="name"
+              cols="40"
+              rows="10"
+              className="name-box"
+              value={newReview.name}
+              onChange={handleChange}
+              required="true"
+              type="text"
+            ></textarea>
           </label>
           <br />
           <label for="reviewOfResults">

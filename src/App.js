@@ -2,6 +2,7 @@ import { Layout } from "antd";
 import "antd/dist/antd.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import Footer from "./components/Footer";
 import Menu from "./components/Menu";
 import ResultsPage from "./components/ResultsPage";
 import ReviewForm from "./components/ReviewForm";
@@ -30,6 +31,7 @@ function App() {
             </Content>
           </ResultsContextProvider>
         </UserChoiceContextProvider>
+        <Footer />
       </Layout>
     </BrowserRouter>
   );

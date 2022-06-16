@@ -10,3 +10,11 @@
 .test {
   border-style: solid;
 }
+
+.help {
+  display: flex;
+  flex-direction: row;
+  order: 6;
+  align-items: center;
+  gap: 10px;
+}

@@ -1,5 +1,5 @@
 import { createContext } from "react";
-import Pata from "../components/Footer";
+// import Pata from "../components/Footer";
 import HairCards from "../components/HairCards";
 import Hero from "../components/Hero";
 import "../styles/Home.css";
@@ -14,7 +14,7 @@ export default function Home() {
         <h3>Choose Your Hair Type</h3>
       </div>
       <HairCards />
-      <Pata />
+      {/* <Pata /> */}
     </>
   );
 }

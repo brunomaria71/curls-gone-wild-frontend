@@ -10,13 +10,7 @@
   justify-content: right;
   height: 600px;
   /* margin-right: 40px; */
-  margin-left: 90px;
-}
-
-.card-images {
-  width: 300px;
-  height: 300px;
-  border-radius: 10px;
+  margin-left: 175px;
 }
 
 .card-meta-title {
@@ -31,16 +25,7 @@
   justify-content: center;
 }
 
-/* .curly-column {
-  flex-direction: row;
-  display: flex;
-  align-content: center;
-  flex-direction: row;
-  padding: 50px;
-  width: 190px;
-  background-color: blue;
-} */
-
 #card1 {
-  margin: 80px;
+  margin: 120px;
+  margin-top: 15%;
 }
