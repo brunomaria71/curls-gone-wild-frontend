@@ -1,7 +1,8 @@
-/* .images {
-  width: 100px;
-  display: flex;
-} */
+.ant-card-cover img {
+  width: 100%;
+  height: 20vw;
+  object-fit: scale-down;
+}
 
 .help {
   display: flex;
@@ -11,8 +12,24 @@
   align-items: center;
   gap: 10px;
   padding-left: 240px;
+  background-color: white;
 }
 
 .products-cards-group {
   margin: 30px;
+  display: flex;
+  flex-direction: row;
+  align-self: end;
+}
+
+.product-card {
+  width: 240px;
+  height: 100%;
+}
+
+.ant-card-bordered .ant-card-cover {
+  height: 100%;
+  border-color: black;
+  border-style: solid;
+  width: 100%;
 }
