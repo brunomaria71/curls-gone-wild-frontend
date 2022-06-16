@@ -36,7 +36,7 @@ export default function Products() {
                 className="products-cards-group"
               >
                 <Card
-                  // className="product-card"
+                  className="product-card"
                   loading={!product}
                   cover={
                     <img
@@ -46,9 +46,6 @@ export default function Products() {
                     />
                   }
                   hoverable
-                  style={{
-                    width: 240,
-                  }}
                 >
                   <Meta
                     title={product?.name}
