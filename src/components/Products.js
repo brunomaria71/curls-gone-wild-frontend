@@ -34,6 +34,7 @@ export default function Products() {
                 key={product._id}
                 // style={{ margin: "20%" }}
                 className="products-cards-group"
+                span={3}
               >
                 <Card
                   className="product-card"
