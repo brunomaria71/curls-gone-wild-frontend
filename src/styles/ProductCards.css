@@ -5,6 +5,8 @@
   font-family: "Bebas Neue", cursive;
   word-spacing: 14px;
   align-content: center;
+  background-color: #fbf6ed;
+  border-style: solid;
 }
 
 .ant-card-cover img {
