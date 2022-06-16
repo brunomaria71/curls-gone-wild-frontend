@@ -1,8 +1,9 @@
 .product-title {
   font-size: 70px;
   display: flex;
-  margin-left: 50%;
+  margin-left: 44%;
   font-family: "Bebas Neue", cursive;
+  word-spacing: 14px;
 }
 
 .ant-card-cover img {
@@ -15,7 +16,6 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  /* order: 6; */
   align-items: center;
   gap: 10px;
   padding-left: 240px;
