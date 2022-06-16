@@ -1,6 +1,7 @@
 import { useContext, useEffect } from "react";
 import { ResultsContext } from "../context/ResultsContext";
 import { UserChoiceContext } from "../context/UserChoiceContext";
+import "../styles/Routines.css";
 
 export default function Routines() {
   const { routines, setRoutines } = useContext(ResultsContext);
@@ -23,9 +24,8 @@ export default function Routines() {
       ) : (
         routines.map((routine) => {
           return (
-            <div key={routine.type}>
-              <p>{routine.type}</p>
-              <p>{routine.routine}</p>
+            <div key={routine.type} id="routinez">
+              <p className="routine-description">{routine.routine}</p>
             </div>
           );
         })

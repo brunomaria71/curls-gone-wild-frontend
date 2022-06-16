@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "../styles/ReviewPage.css";
 
 export default function ReviewPage() {
   const [reviews, setReviews] = useState();
