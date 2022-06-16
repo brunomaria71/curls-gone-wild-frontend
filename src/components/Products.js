@@ -23,42 +23,45 @@ export default function Products() {
   }, []);
 
   return (
-    <div>
-      {!products ? (
-        <h2>Loading...</h2>
-      ) : (
-        <div className="help">
-          {products.map((product) => {
-            return (
-              <Col
-                key={product._id}
-                // style={{ margin: "20%" }}
-                className="products-cards-group"
-                span={3}
-              >
-                <Card
-                  className="product-card"
-                  loading={!product}
-                  cover={
-                    <img
-                      className="images"
-                      alt={product?.name}
-                      src={product?.image}
-                    />
-                  }
-                  hoverable
+    <>
+      <h1 className="product-title">Your results are:</h1>
+      <div>
+        {!products ? (
+          <h2>Loading...</h2>
+        ) : (
+          <div className="help">
+            {products.map((product) => {
+              return (
+                <Col
+                  key={product._id}
+                  // style={{ margin: "20%" }}
+                  className="products-cards-group"
+                  span={3}
                 >
-                  <Meta
-                    title={product?.name}
-                    description={products?.description}
-                  />
-                </Card>
-              </Col>
-            );
-          })}
-        </div>
-      )}
-    </div>
+                  <Card
+                    className="product-card"
+                    loading={!product}
+                    cover={
+                      <img
+                        className="images"
+                        alt={product?.name}
+                        src={product?.image}
+                      />
+                    }
+                    hoverable
+                  >
+                    <Meta
+                      title={product?.name}
+                      description={products?.description}
+                    />
+                  </Card>
+                </Col>
+              );
+            })}
+          </div>
+        )}
+      </div>
+    </>
   );
 }
 
