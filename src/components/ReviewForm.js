@@ -63,14 +63,16 @@ export default function ReviewForm() {
           <br />
           <label for="reviewOfResults">
             Review:
-            <input
+            <textarea
               className="review-box"
               name="reviewOfResults"
               type="text"
               value={newReview.reviewOfResults}
               onChange={handleChange}
               required="true"
-            />
+              cols="40"
+              rows="10"
+            ></textarea>
           </label>
           <br />
           <button type="submit" onClick={() => handleSubmit()}>
