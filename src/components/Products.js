@@ -1,4 +1,4 @@
-import { Card, Col } from "antd";
+import { Card, Col, Row } from "antd";
 import "../styles/ProductCards.css";
 
 import { useContext, useEffect } from "react";
@@ -30,33 +30,41 @@ export default function Products() {
           <h2>Loading...</h2>
         ) : (
           <div className="product-cards-overall">
-            {products.map((product) => {
-              return (
-                <Col
-                  key={product._id}
-                  className="products-cards-group"
-                  span={3}
-                >
-                  <Card
-                    className="product-card"
-                    loading={!product}
-                    cover={
-                      <img
-                        className="product-images"
-                        alt={product?.name}
-                        src={product?.image}
-                      />
-                    }
-                    hoverable
-                  >
-                    <Meta
-                      title={product?.name}
-                      description={products?.description}
-                    />
-                  </Card>
-                </Col>
-              );
-            })}
+            <Row gutter={16} justify="space-around" align="middle">
+              {products.map((product) => {
+                return (
+                  <div id="outer-card-box">
+                    <Col
+                      key={product._id}
+                      className="products-cards-group"
+                      span={8}
+                    >
+                      <Card
+                        className="product-card"
+                        loading={!product}
+                        cover={
+                          <img
+                            className="product-images"
+                            alt={product?.name}
+                            src={product?.image}
+                          />
+                        }
+                        hoverable
+                      >
+                        <Meta
+                          title={product?.name}
+                          description={products?.description}
+                        />
+                        <div className="title-paragraphs">
+                          <p id="styling-title">{product?.type}</p>
+                          <p>{product?.instructions}</p>
+                        </div>
+                      </Card>
+                    </Col>
+                  </div>
+                );
+              })}
+            </Row>
           </div>
         )}
       </div>
