@@ -1,14 +1,6 @@
 import { Carousel } from "antd";
 import { useEffect, useState } from "react";
-// import "../styles/ReviewPage.css";
-
-const contentStyle = {
-  height: "160px",
-  color: "#fff",
-  lineHeight: "160px",
-  textAlign: "center",
-  background: "#658076",
-};
+import "../styles/ReviewPage.css";
 
 export default function ReviewPage() {
   const [reviews, setReviews] = useState();
@@ -29,7 +21,7 @@ export default function ReviewPage() {
             {reviews.map((reviews) => {
               return (
                 <div>
-                  <h3 style={contentStyle}>
+                  <h3 className="review-testimonies">
                     {reviews.name} - {reviews.reviewOfResults}
                   </h3>
                 </div>
