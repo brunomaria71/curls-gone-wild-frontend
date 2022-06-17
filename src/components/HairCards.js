@@ -1,5 +1,5 @@
 import { Card, Col } from "antd";
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { useNavigate } from "react-router";
 import coily from "../assets/coily.jpeg";
 import curly from "../assets/curly.jpeg";
@@ -36,32 +36,25 @@ export default function HairCards() {
       <Col className="card-group">
         <div className="wavy-column">
           <Card
-            id="card1"
+            id="hair-cards"
             hoverable
             cover={
-              <img
-                className="card-images"
-                alt="wavy hair example"
-                src={wavy}
-                onClick={onClickWavy}
-              />
+              <img alt="wavy hair example" src={wavy} onClick={onClickWavy} />
             }
           >
             <Meta
-              title="wavy"
-              description="hair is wavy"
-              className="card-meta-title"
+              title="Wavy"
+              description="S-shape bends ranging from subtle to defined."
             />
           </Card>
         </div>
 
         <div className="curly-column">
           <Card
-            id="card1"
+            id="hair-cards"
             hoverable
             cover={
               <img
-                className="card-images"
                 alt="curly hair example"
                 src={curly}
                 onClick={onClickCurly}
@@ -69,20 +62,18 @@ export default function HairCards() {
             }
           >
             <Meta
-              title="curly"
-              description="hair is curly"
-              className="card-meta-title"
+              title="Curly"
+              description="Loose ringlets, springy spirals, and so much more."
             />
           </Card>
         </div>
 
         <div className="coily-column">
           <Card
-            id="card1"
+            id="hair-cards"
             hoverable
             cover={
               <img
-                className="card-images"
                 alt="curly hair example"
                 src={coily}
                 onClick={onClickCoily}
@@ -90,9 +81,8 @@ export default function HairCards() {
             }
           >
             <Meta
-              title="coily"
-              description="hair is coily"
-              className="card-meta-title"
+              title="Coily"
+              description="From tight curls to Z-shaped zig-zags and everything in between."
             />
           </Card>
         </div>

@@ -3,29 +3,15 @@
   border-style: solid;
   border-color: blueviolet;
   height: 600px;
+  margin-left: 189px;
 }
 
 .card-group {
   display: flex;
-  justify-content: right;
   height: 600px;
-  /* margin-right: 40px; */
-  margin-left: 175px;
+  justify-content: space-between;
 }
 
-.card-meta-title {
-  background-color: rgb(167, 161, 161);
-  flex-direction: row;
-  display: flex;
-  align-content: center;
-  flex-direction: row;
-  padding: 5px;
-  width: 96%;
-  border-radius: 10px;
-  justify-content: center;
-}
-
-#card1 {
-  margin: 120px;
-  margin-top: 15%;
+#hair-cards {
+  margin: 50px;
 }

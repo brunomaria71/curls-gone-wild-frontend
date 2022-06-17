@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Hero />
       <div className="checking">
-        <h3>Choose Your Hair Type</h3>
+        <h3 className="home-title">Choose Your Hair Type</h3>
       </div>
       <HairCards />
       {/* <Pata /> */}

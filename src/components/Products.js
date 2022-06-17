@@ -29,12 +29,11 @@ export default function Products() {
         {!products ? (
           <h2>Loading...</h2>
         ) : (
-          <div className="help">
+          <div className="product-cards-overall">
             {products.map((product) => {
               return (
                 <Col
                   key={product._id}
-                  // style={{ margin: "20%" }}
                   className="products-cards-group"
                   span={3}
                 >
@@ -43,7 +42,7 @@ export default function Products() {
                     loading={!product}
                     cover={
                       <img
-                        className="images"
+                        className="product-images"
                         alt={product?.name}
                         src={product?.image}
                       />

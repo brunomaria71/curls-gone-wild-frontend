@@ -1,4 +1,4 @@
-h3 {
+.home-title {
   background-color: #fbf6ed;
   /* /* border-style: solid; */
   color: grey;
@@ -16,4 +16,5 @@ h3 {
 .checking {
   border-style: solid;
   background-color: #fbf6ed;
+  margin-left: 175px;
 }
