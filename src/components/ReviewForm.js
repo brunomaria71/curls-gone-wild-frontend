@@ -40,15 +40,6 @@ export default function ReviewForm() {
         <form onSubmit={handleSubmit} className="form">
           <label for="name">
             Name:
-            {/* <input
-              className="name-box"
-              name="name"
-              type="text"
-              value={newReview.name}
-              onChange={handleChange}
-              required="true"
-              rows="10"
-            /> */}
             <textarea
               name="name"
               cols="40"

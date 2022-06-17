@@ -15,11 +15,11 @@ const { Header, Content } = Layout;
 function App() {
   return (
     <BrowserRouter>
-      <Layout>
-        <Header>
-          <Menu />
-        </Header>
-        <UserChoiceContextProvider>
+      <UserChoiceContextProvider>
+        <Layout>
+          <Header>
+            <Menu />
+          </Header>
           <ResultsContextProvider>
             <Content>
               <Routes>
@@ -30,9 +30,9 @@ function App() {
               </Routes>
             </Content>
           </ResultsContextProvider>
-        </UserChoiceContextProvider>
-        <Footer />
-      </Layout>
+          <Footer />
+        </Layout>
+      </UserChoiceContextProvider>
     </BrowserRouter>
   );
 }

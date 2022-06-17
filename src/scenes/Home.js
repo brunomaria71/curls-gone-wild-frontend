@@ -2,6 +2,7 @@ import { createContext } from "react";
 // import Pata from "../components/Footer";
 import HairCards from "../components/HairCards";
 import Hero from "../components/Hero";
+// import Login from "../components/Login";
 import "../styles/Home.css";
 
 export const RoutineContext = createContext(null);

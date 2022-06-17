@@ -1,5 +1,6 @@
 import { Layout, Menu } from "antd";
 import logo from "../assets/logo.jpg";
+import Login from "../components/Login";
 import "../styles/Menu.css";
 const { Sider } = Layout;
 
@@ -26,6 +27,7 @@ export default function Template() {
             <a href="/reviews/add">Add Review</a>
             <a href="/reviews">See What Others Are Saying</a>
           </div>
+          <Login />
         </Menu>
       </Sider>
     </Layout>
