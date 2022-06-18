@@ -1,0 +1,14 @@
+#login-btn {
+  color: red;
+}
+
+.btn-box {
+  border-style: solid;
+  border-color: red;
+  display: flex;
+  flex-direction: row-reverse;
+  align-content: center;
+  margin-top: 0%;
+  margin-right: 21%;
+  margin-bottom: 5%;
+}

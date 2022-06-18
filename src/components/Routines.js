@@ -1,6 +1,8 @@
 import { useContext, useEffect } from "react";
+import Login from "../components/Login";
 import { ResultsContext } from "../context/ResultsContext";
 import { UserChoiceContext } from "../context/UserChoiceContext";
+
 import "../styles/Routines.css";
 
 export default function Routines() {
@@ -24,9 +26,12 @@ export default function Routines() {
       ) : (
         routines.map((routine) => {
           return (
-            <div key={routine.type} id="routinez">
-              <p className="routine-description">{routine.routine}</p>
-            </div>
+            <>
+              <div key={routine.type} id="routinez">
+                <p className="routine-description">{routine.routine}</p>
+              </div>
+              <Login />
+            </>
           );
         })
       )}

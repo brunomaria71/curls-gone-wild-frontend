@@ -1,8 +1,9 @@
-import React from "react";
+import { useNavigate } from "react-router";
 import Products from "./Products";
 import Routines from "./Routines";
 
 export default function ResultsPage() {
+  const navigate = useNavigate();
   return (
     <div>
       <Products />
