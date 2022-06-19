@@ -1,7 +1,7 @@
 import { Layout } from "antd";
 import "../styles/Footer.css";
 
-const { Header, Content, Footer, Sider } = Layout;
+const { Footer } = Layout;
 
 export default function Pata() {
   return (

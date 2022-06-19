@@ -9,7 +9,7 @@ const { Meta } = Card;
 
 export default function Products() {
   const { products, setProducts } = useContext(ResultsContext);
-  const { bestFor, setBestFor } = useContext(UserChoiceContext);
+  const { bestFor } = useContext(UserChoiceContext);
 
   useEffect(() => {
     fetch("https://curls-gone-wild.web.app/products")

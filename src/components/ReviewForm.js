@@ -10,7 +10,7 @@ export default function ReviewForm() {
     reviewOfResults: "",
   });
 
-  const [error, setError] = useState("");
+  const [setError] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();

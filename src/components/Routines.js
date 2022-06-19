@@ -7,7 +7,7 @@ import "../styles/Routines.css";
 
 export default function Routines() {
   const { routines, setRoutines } = useContext(ResultsContext);
-  const { type, setType } = useContext(UserChoiceContext);
+  const { type } = useContext(UserChoiceContext);
 
   useEffect(() => {
     fetch("https://curls-gone-wild.web.app/routines")

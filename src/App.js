@@ -11,7 +11,7 @@ import ReviewPage from "./components/ReviewPage";
 import { ResultsContextProvider } from "./context/ResultsContext";
 import { UserChoiceContextProvider } from "./context/UserChoiceContext";
 import Home from "./scenes/Home";
-const { Header, Content } = Layout;
+const { Content } = Layout;
 
 function App() {
   return (
