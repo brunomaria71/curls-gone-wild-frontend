@@ -36,7 +36,7 @@ export default function Login() {
 
   return (
     <div className="btn-box">
-      <Button onClick={handleGoogleLogin} id="login-btn">
+      <Button onClick={handleGoogleLogin} id="btns">
         Add Review
       </Button>
     </div>

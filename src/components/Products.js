@@ -23,7 +23,7 @@ export default function Products() {
   }, []);
 
   return (
-    <>
+    <div id="outer-title-box">
       <h1 className="product-title">Your results are:</h1>
       <div>
         {!products ? (
@@ -68,7 +68,7 @@ export default function Products() {
           </div>
         )}
       </div>
-    </>
+    </div>
   );
 }
 

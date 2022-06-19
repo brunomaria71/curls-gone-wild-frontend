@@ -26,12 +26,12 @@ export default function Routines() {
       ) : (
         routines.map((routine) => {
           return (
-            <>
+            <div id="outer-div">
               <div key={routine.type} id="routinez">
                 <p className="routine-description">{routine.routine}</p>
               </div>
               <Login />
-            </>
+            </div>
           );
         })
       )}

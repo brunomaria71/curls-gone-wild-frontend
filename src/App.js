@@ -3,6 +3,7 @@ import "antd/dist/antd.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/Footer";
+import HairCards from "./components/HairCards";
 import Menu from "./components/Menu";
 import ResultsPage from "./components/ResultsPage";
 import ReviewForm from "./components/ReviewForm";
@@ -16,22 +17,19 @@ function App() {
   return (
     <BrowserRouter>
       <UserChoiceContextProvider>
-        <Layout>
-          <Header>
-            <Menu />
-          </Header>
-          <ResultsContextProvider>
-            <Content>
-              <Routes>
-                <Route path="/reviews/add" element={<ReviewForm />} />
-                <Route path="/reviews" element={<ReviewPage />} />
-                <Route path="/results" element={<ResultsPage />} />
-                <Route path="/home" element={<Home />} />
-              </Routes>
-            </Content>
-          </ResultsContextProvider>
-          <Footer />
-        </Layout>
+        <Menu />
+        <ResultsContextProvider>
+          <Content>
+            <Routes>
+              <Route path="/reviews/add" element={<ReviewForm />} />
+              <Route path="/haircards" element={<HairCards />} />
+              <Route path="/reviews" element={<ReviewPage />} />
+              <Route path="/results" element={<ResultsPage />} />
+              <Route path="/home" element={<Home />} />
+            </Routes>
+          </Content>
+        </ResultsContextProvider>
+        <Footer />
       </UserChoiceContextProvider>
     </BrowserRouter>
   );

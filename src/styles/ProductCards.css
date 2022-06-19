@@ -1,28 +1,31 @@
 .product-title {
   font-size: 70px;
   display: flex;
-  padding-left: 42%;
+  /* padding-left: 42%; */
   font-family: "Bebas Neue", cursive;
   word-spacing: 14px;
-  align-content: center;
-  background-color: #fbf6ed;
-  border-style: solid;
+  /* align-content: center; */
+  background-color: white;
+  /* border-style: solid; */
   margin-bottom: 0;
+  justify-content: center;
 }
 
 .product-cards-overall {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   flex-direction: row;
-  padding-left: 214px;
+  /* padding-left: 214px; */
   background-color: white;
   justify-content: space-between;
+  overflow-y: scroll;
 }
 
 #outer-card-box {
-  border-style: solid;
-  border-color: blue;
-  margin-top: 50px;
+  /* border-style: solid; */
+  /* border-color: blue; */
+  /* margin-top: 50px; */
+  /* background-color: #dac0e0; */
 }
 
 .products-cards-group {
@@ -44,8 +47,8 @@
 }
 
 .title-paragraphs {
-  border-style: solid;
-  border-color: aqua;
+  /* border-style: solid; */
+  /* border-color: aqua; */
   height: 250px;
   text-align: center;
   width: 100%;
@@ -55,4 +58,13 @@
 
 #styling-title {
   margin: 0px;
+}
+
+.ant-row {
+  display: flex;
+  flex-flow: inherit;
+}
+
+#outer-title-box {
+  background-color: white;
 }
