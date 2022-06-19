@@ -1,9 +1,9 @@
-#components-layout-demo-responsive .logo {
+/* #components-layout-demo-responsive .logo {
   height: 32px;
   margin: 16px;
   background: rgba(255, 255, 255, 0.2);
 }
-*/ .site-layout-sub-header-background {
+ .site-layout-sub-header-background {
   background: rgb(217, 35, 35);
 }
 
@@ -53,4 +53,15 @@ a {
 
 .ant-layout-header {
   height: 0px;
+} */
+
+.ant-menu {
+  line-height: inherit;
+  background-color: rebeccapurple;
+  display: flex;
+  align-content: space-between;
+  /* padding: 0.5rem; */
+  justify-content: center;
+  font-family: "Bebas Neue", cursive;
+  font-size: 2rem;
 }

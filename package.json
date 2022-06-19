@@ -8,6 +8,7 @@
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "antd": "^4.21.0",
+    "firebase": "^9.8.3",
     "install": "^0.13.0",
     "npm": "^8.12.1",
     "react": "^18.1.0",
@@ -15,6 +16,7 @@
     "react-player": "^2.10.1",
     "react-router": "^6.3.0",
     "react-router-dom": "^6.3.0",
+    "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },

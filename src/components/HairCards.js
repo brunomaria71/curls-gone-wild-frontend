@@ -1,5 +1,5 @@
 import { Card, Col } from "antd";
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { useNavigate } from "react-router";
 import coily from "../assets/coily.jpeg";
 import curly from "../assets/curly.jpeg";
@@ -32,71 +32,67 @@ export default function HairCards() {
   };
 
   return (
-    <div className="cards-overall">
-      <Col className="card-group">
-        <div className="wavy-column">
-          <Card
-            id="card1"
-            hoverable
-            cover={
-              <img
-                className="card-images"
-                alt="wavy hair example"
-                src={wavy}
-                onClick={onClickWavy}
-              />
-            }
-          >
-            <Meta
-              title="wavy"
-              description="hair is wavy"
-              className="card-meta-title"
-            />
-          </Card>
-        </div>
+    <>
+      <h3 className="home-title" id="haircards">
+        Choose Your Hair Type
+      </h3>
 
-        <div className="curly-column">
-          <Card
-            id="card1"
-            hoverable
-            cover={
-              <img
-                className="card-images"
-                alt="curly hair example"
-                src={curly}
-                onClick={onClickCurly}
+      <div className="cards-overall">
+        <Col className="card-group">
+          <div className="wavy-column">
+            <Card
+              id="hair-cards"
+              hoverable
+              cover={
+                <img alt="wavy hair example" src={wavy} onClick={onClickWavy} />
+              }
+            >
+              <Meta
+                title="Wavy"
+                description="S-shape bends ranging from subtle to defined."
               />
-            }
-          >
-            <Meta
-              title="curly"
-              description="hair is curly"
-              className="card-meta-title"
-            />
-          </Card>
-        </div>
+            </Card>
+          </div>
 
-        <div className="coily-column">
-          <Card
-            id="card1"
-            hoverable
-            cover={
-              <img
-                className="card-images"
-                alt="curly hair example"
-                src={coily}
-                onClick={onClickCoily}
+          <div className="curly-column">
+            <Card
+              id="hair-cards"
+              hoverable
+              cover={
+                <img
+                  alt="curly hair example"
+                  src={curly}
+                  onClick={onClickCurly}
+                />
+              }
+            >
+              <Meta
+                title="Curly"
+                description="Loose ringlets, springy spirals, and so much more."
               />
-            }
-          >
-            <Meta
-              title="coily"
-              description="hair is coily"
-              className="card-meta-title"
-            />
-          </Card>
-        </div>
-      </Col>
-    </div>
+            </Card>
+          </div>
+
+          <div className="coily-column">
+            <Card
+              id="hair-cards"
+              hoverable
+              cover={
+                <img
+                  alt="curly hair example"
+                  src={coily}
+                  onClick={onClickCoily}
+                />
+              }
+            >
+              <Meta
+                title="Coily"
+                description="Tight curls to Z-shaped zig-zags."
+              />
+            </Card>
+          </div>
+        </Col>
+      </div>
+    </>
   );
 }

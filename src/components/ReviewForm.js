@@ -10,7 +10,7 @@ export default function ReviewForm() {
     reviewOfResults: "",
   });
 
-  const [error, setError] = useState("");
+  const [setError] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -34,49 +34,46 @@ export default function ReviewForm() {
   };
 
   return (
-    <section className="style">
-      <h1 className="title">Add Review</h1>
-      <div className="content">
-        <form onSubmit={handleSubmit} className="form">
-          <label for="name">
-            Name:
-            {/* <input
-              className="name-box"
-              name="name"
-              type="text"
-              value={newReview.name}
-              onChange={handleChange}
-              required="true"
-              rows="10"
-            /> */}
-            <textarea
-              name="name"
-              cols="40"
-              rows="10"
-              className="name-box"
-              value={newReview.name}
-              onChange={handleChange}
-              required="true"
-              type="text"
-            ></textarea>
-          </label>
-          <br />
-          <label for="reviewOfResults">
-            Review:
-            <input
-              className="review-box"
-              name="reviewOfResults"
-              type="text"
-              value={newReview.reviewOfResults}
-              onChange={handleChange}
-              required="true"
-            />
-          </label>
-          <br />
-          <button type="submit" onClick={() => handleSubmit()}>
-            Submit
-          </button>
-        </form>
+    <section>
+      <div id="form-box">
+        <h1 className="title">Add Review</h1>
+        <div className="content">
+          <form onSubmit={handleSubmit} className="form">
+            <label for="name">
+              Name:
+              <br />
+              <textarea
+                name="name"
+                cols="40"
+                rows="10"
+                className="name-box"
+                value={newReview.name}
+                onChange={handleChange}
+                required="true"
+                type="text"
+              ></textarea>
+            </label>
+            <br />
+            <label for="reviewOfResults">
+              Review:
+              <br />
+              <textarea
+                className="review-box"
+                name="reviewOfResults"
+                type="text"
+                value={newReview.reviewOfResults}
+                onChange={handleChange}
+                required="true"
+                cols="40"
+                rows="10"
+              ></textarea>
+            </label>
+            <br />
+            <button id="btns" type="submit" onClick={() => handleSubmit()}>
+              Submit
+            </button>
+          </form>
+        </div>
       </div>
     </section>
   );

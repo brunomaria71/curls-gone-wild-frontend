@@ -1,31 +1,29 @@
+.home-title {
+  background-color: #dac0e0;
+  /* /* border-style: solid; */
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  height: 100px;
+  font-family: "Bebas Neue", cursive;
+  word-spacing: 30px;
+  letter-spacing: 15px;
+  position: relative;
+  padding: 24px;
+  margin-top: -77px;
+  margin-bottom: 0px;
+}
+
 .cards-overall {
-  background-color: #fbf6ed;
-  border-style: solid;
-  border-color: blueviolet;
-  height: 600px;
+  height: 695px;
+  background-color: #dac0e0;
 }
 
 .card-group {
   display: flex;
-  justify-content: right;
-  height: 600px;
-  /* margin-right: 40px; */
-  margin-left: 175px;
+  justify-content: space-between;
 }
 
-.card-meta-title {
-  background-color: rgb(167, 161, 161);
-  flex-direction: row;
-  display: flex;
-  align-content: center;
-  flex-direction: row;
-  padding: 5px;
-  width: 96%;
-  border-radius: 10px;
-  justify-content: center;
-}
-
-#card1 {
-  margin: 120px;
-  margin-top: 15%;
+#hair-cards {
+  margin: 50px;
 }
