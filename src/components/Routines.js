@@ -27,7 +27,7 @@ export default function Routines() {
         routines.map((routine) => {
           return (
             <div id="outer-div">
-              <div key={routine.type} id="routinez">
+              <div key={routine.type} id="routine-outer">
                 <p className="routine-description">{routine.routine}</p>
               </div>
             </div>
