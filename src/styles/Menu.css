@@ -1,67 +1,14 @@
-/* #components-layout-demo-responsive .logo {
-  height: 32px;
-  margin: 16px;
-  background: rgba(255, 255, 255, 0.2);
-}
- .site-layout-sub-header-background {
-  background: rgb(217, 35, 35);
-}
-
-.site-layout-background {
-  background: red;
-}
-
-.nav-links {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: #658076;
-}
-
-a {
-  font-size: 2em;
-  text-decoration: none;
-  color: white;
-  text-align: center;
-  font-family: "Bebas Neue", cursive;
-}
-
-.ant-layout-sider {
-  border-style: solid;
-  border-color: black;
-  border-width: 5px;
-  height: 100vh;
-  z-index: 5;
-}
-
-.logo {
-  width: 100%;
-}
-
-.ant-layout-sider-dark {
-  height: 100vh;
-  position: fixed;
-  left: 0px;
-}
-
-.ant-layout-sider-children {
-  height: 100vh;
-  z-index: 5;
-  position: absolute;
-  background-color: #658076;
-}
-
-.ant-layout-header {
-  height: 0px;
-} */
-
 .ant-menu {
   line-height: inherit;
   background-color: rebeccapurple;
   display: flex;
   align-content: space-between;
-  /* padding: 0.5rem; */
   justify-content: center;
   font-family: "Bebas Neue", cursive;
   font-size: 2rem;
+  color: white;
+}
+
+.ant-menu-horizontal > .ant-menu-item a {
+  color: rgb(255 255 255 / 85%);
 }

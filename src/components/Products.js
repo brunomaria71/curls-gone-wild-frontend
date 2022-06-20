@@ -33,7 +33,7 @@ export default function Products() {
             <Row gutter={16} justify="space-around" align="middle">
               {products.map((product) => {
                 return (
-                  <div id="outer-card-box">
+                  <div>
                     <Col
                       key={product._id}
                       className="products-cards-group"

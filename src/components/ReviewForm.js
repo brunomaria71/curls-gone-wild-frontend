@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/ReviewForm.css";
 
@@ -32,6 +32,10 @@ export default function ReviewForm() {
       [e.target.name]: newValue,
     });
   };
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
 
   return (
     <section>
