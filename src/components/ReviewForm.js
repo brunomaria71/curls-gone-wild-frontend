@@ -116,15 +116,6 @@ export default function ReviewForm() {
 //     console.log(newReview, "value on change");
 //   };
 
-//   const handleChange2 = (e) => {
-//     const newValue2 = e.target.value;
-//     setNewReview({
-//       ...newReview,
-//       reviewOfResults: newValue2,
-//     });
-//     console.log(newReview, "value on change");
-//   };
-
 //   return (
 //     <div>
 //       <Form labelCol={{ span: 8 }} wrapperCol={{ span: 16 }}>
@@ -147,7 +138,7 @@ export default function ReviewForm() {
 //           name="review"
 //           label="Review"
 //           value={newReview.reviewOfResults}
-//           onChange={handleChange2}
+//           onChange={handleChange}
 //           rules={[
 //             {
 //               message: "Please include your review",

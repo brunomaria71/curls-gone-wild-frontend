@@ -14,30 +14,30 @@ export default function Login() {
   const navigate = useNavigate();
   const { user, setUser } = useContext(UserChoiceContext);
 
-  useEffect(() => {
-    const localUser = localStorage.getItem("displayName");
-    console.log("LocalUser from LS", localUser);
-
-    if (localUser) {
-      setUser({ ...user, displayName: localUser });
-    }
-  }, []);
-
   function handleGoogleLogin() {
     const auth = connectAuth();
     const provider = new GoogleAuthProvider();
     signInWithPopup(auth, provider)
       .then((res) => {
+        console.log(res);
+        const name = res.user.displayName;
+        const profilePic = res.user.photoURL;
+        localStorage.setItem("name", name);
+        localStorage.setItem("profilePic", profilePic);
         setUser(res.user);
-        navigate("/reviews/add");
       })
       .catch(console.error);
   }
+  useEffect(() => {
+    if (user) {
+      navigate("/reviews/add");
+    }
+  }, [user]);
 
   return (
     <div className="btn-box">
       <Button onClick={handleGoogleLogin} id="btns">
-        Add Review
+        GoogleLogin to add review
       </Button>
     </div>
   );

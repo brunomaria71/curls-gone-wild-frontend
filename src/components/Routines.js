@@ -1,6 +1,5 @@
 import { Spin } from "antd";
 import { useContext, useEffect } from "react";
-import Login from "../components/Login";
 import { ResultsContext } from "../context/ResultsContext";
 import { UserChoiceContext } from "../context/UserChoiceContext";
 
@@ -31,7 +30,6 @@ export default function Routines() {
               <div key={routine.type} id="routinez">
                 <p className="routine-description">{routine.routine}</p>
               </div>
-              <Login />
             </div>
           );
         })

@@ -71,19 +71,3 @@ export default function Products() {
     </div>
   );
 }
-
-//ORIGINAL
-
-//ANT DESIGN VERSION
-
-{
-  /* <Col style={{ width: "300px", margin: "1em" }}>
-  <Card
-    loading={!product}
-    cover={product && <img alt={product?.name} src={product?.image} />}
-    hoverable
-  >
-    <Meta title={product?.name} description={products?.description} />
-  </Card>
-</Col>; */
-}
