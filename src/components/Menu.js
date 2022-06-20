@@ -44,7 +44,7 @@ const items = [
   },
 
   {
-    label: <p>About</p>,
+    label: <a href="/about">About</a>,
     key: "about",
   },
 ];

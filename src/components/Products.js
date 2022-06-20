@@ -1,4 +1,4 @@
-import { Card, Col, Row } from "antd";
+import { Card, Col, Row, Spin } from "antd";
 import "../styles/ProductCards.css";
 
 import { useContext, useEffect } from "react";
@@ -27,7 +27,7 @@ export default function Products() {
       <h1 className="product-title">Your results are:</h1>
       <div>
         {!products ? (
-          <h2>Loading...</h2>
+          <Spin size="large" />
         ) : (
           <div className="product-cards-overall">
             <Row gutter={16} justify="space-around" align="middle">

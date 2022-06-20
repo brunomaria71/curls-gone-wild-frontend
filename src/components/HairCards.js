@@ -33,7 +33,7 @@ export default function HairCards() {
 
   return (
     <>
-      <h3 className="home-title" id="haircards">
+      <h3 className="home-title" id="choosehair">
         Choose Your Hair Type
       </h3>
 

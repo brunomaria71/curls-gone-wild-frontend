@@ -2,6 +2,7 @@ import { Layout } from "antd";
 import "antd/dist/antd.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import About from "./components/About";
 import Footer from "./components/Footer";
 import HairCards from "./components/HairCards";
 import Menu from "./components/Menu";
@@ -25,6 +26,7 @@ function App() {
               <Route path="/haircards" element={<HairCards />} />
               <Route path="/reviews" element={<ReviewPage />} />
               <Route path="/results" element={<ResultsPage />} />
+              <Route path="/about" element={<About />} />
               <Route path="/home" element={<Home />} />
             </Routes>
           </Content>

@@ -1,3 +1,4 @@
+import { Spin } from "antd";
 import { useContext, useEffect } from "react";
 import Login from "../components/Login";
 import { ResultsContext } from "../context/ResultsContext";
@@ -22,7 +23,7 @@ export default function Routines() {
   return (
     <div>
       {!routines ? (
-        <h2>Loading...</h2>
+        <Spin size="large" />
       ) : (
         routines.map((routine) => {
           return (

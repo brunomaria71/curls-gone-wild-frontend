@@ -78,3 +78,92 @@ export default function ReviewForm() {
     </section>
   );
 }
+
+// import { Button, Form, Input } from "antd";
+
+// const ReviewForm = () => {
+//   let navigate = useNavigate();
+//   const [newReview, setNewReview] = useState({
+//     name: "",
+//     reviewOfResults: "",
+//   });
+
+//   const [setError] = useState("");
+
+//   const onSubmit = (e) => {
+//     e.preventDefault();
+//     console.log(newReview, "this is being sent to API");
+//     fetch("https://curls-gone-wild.web.app/review", {
+//       method: "POST",
+//       headers: {
+//         "Content-Type": "application/json",
+//       },
+//       body: JSON.stringify(newReview),
+//     })
+//       // .then(() => navigate("/reviews"))
+//       // .catch(setError);
+//       .then((res) => res.json())
+//       .then((data) => console.log(data))
+//       .catch(console.error);
+//   };
+
+//   const handleChange = (e) => {
+//     const newValue = e.target.value;
+//     setNewReview({
+//       ...newReview,
+//       name: newValue,
+//     });
+//     console.log(newReview, "value on change");
+//   };
+
+//   const handleChange2 = (e) => {
+//     const newValue2 = e.target.value;
+//     setNewReview({
+//       ...newReview,
+//       reviewOfResults: newValue2,
+//     });
+//     console.log(newReview, "value on change");
+//   };
+
+//   return (
+//     <div>
+//       <Form labelCol={{ span: 8 }} wrapperCol={{ span: 16 }}>
+//         <Form.Item
+//           label="Name"
+//           value={newReview.name}
+//           // onChange={(e) => setNewReview({ [e.target.name]: e.target.value })}
+//           onChange={handleChange}
+//           rules={[
+//             {
+//               message: "Please include your name",
+//               required: true,
+//             },
+//           ]}
+//           hasFeedback
+//         >
+//           <Input></Input>
+//         </Form.Item>
+//         <Form.Item
+//           name="review"
+//           label="Review"
+//           value={newReview.reviewOfResults}
+//           onChange={handleChange2}
+//           rules={[
+//             {
+//               message: "Please include your review",
+//             },
+//           ]}
+//           hasFeedback
+//         >
+//           <Input />
+//         </Form.Item>
+//         <Form.Item wrapperCol={{ span: 16, offset: 8 }}>
+//           <Button type="primary" htmlType="submit" onClick={onSubmit}>
+//             Submit
+//           </Button>
+//         </Form.Item>
+//       </Form>
+//     </div>
+//   );
+// };
+// export default ReviewForm;
