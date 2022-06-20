@@ -1,6 +1,6 @@
-import { Button } from "antd";
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { useContext, useEffect } from "react";
+import GoogleButton from "react-google-button";
 import { useNavigate } from "react-router-dom";
 import { UserChoiceContext } from "../context/UserChoiceContext";
 import app from "../secrets/secret.js";
@@ -36,9 +36,8 @@ export default function Login() {
 
   return (
     <div className="btn-box">
-      <Button onClick={handleGoogleLogin} id="btns">
-        GoogleLogin to add review
-      </Button>
+      <p className="login-title">Login to add a review</p>
+      <GoogleButton onClick={handleGoogleLogin}></GoogleButton>
     </div>
   );
 }

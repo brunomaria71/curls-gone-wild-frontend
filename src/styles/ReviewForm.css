@@ -43,3 +43,13 @@ button {
   font-family: "Bebas Neue", cursive;
   font-size: 30px;
 }
+
+#btns {
+  color: black;
+  padding-right: 50px;
+  padding-left: 50px;
+  border-radius: 15px;
+  background-color: #dac0e0;
+  font-size: 1rem;
+  font-family: emoji;
+}

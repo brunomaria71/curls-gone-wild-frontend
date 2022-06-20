@@ -1,17 +1,14 @@
-#btns {
-  color: black;
-  padding-right: 50px;
-  padding-left: 50px;
-  border-radius: 15px;
-  background-color: #dac0e0;
-  font-size: 1rem;
-  font-family: emoji;
-}
-
 .btn-box {
   display: flex;
-  flex-direction: row-reverse;
-  margin-right: 21%;
+  flex-direction: row;
+  margin-right: 10%;
   background-color: white;
   margin-bottom: 40px;
+  justify-content: flex-end;
+}
+
+.login-title {
+  margin-right: 28px;
+  font-size: 12px;
+  margin-top: 13px;
 }
