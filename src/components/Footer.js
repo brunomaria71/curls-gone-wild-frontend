@@ -3,7 +3,7 @@ import "../styles/Footer.css";
 
 const { Footer } = Layout;
 
-export default function Pata() {
+export default function BottomNav() {
   return (
     <Layout>
       <Footer style={{ textAlign: "center" }}>

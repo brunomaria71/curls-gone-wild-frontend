@@ -1,6 +1,5 @@
 import { Layout } from "antd";
 import "antd/dist/antd.css";
-import { useContext } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import About from "./components/About";
@@ -11,17 +10,12 @@ import ResultsPage from "./components/ResultsPage";
 import ReviewForm from "./components/ReviewForm";
 import ReviewPage from "./components/ReviewPage";
 import { ResultsContextProvider } from "./context/ResultsContext";
-import {
-  UserChoiceContext,
-  UserChoiceContextProvider,
-} from "./context/UserChoiceContext";
+import { UserChoiceContextProvider } from "./context/UserChoiceContext";
 import Home from "./scenes/Home";
 
 const { Content } = Layout;
 
 function App() {
-  const { user } = useContext(UserChoiceContext);
-
   return (
     <BrowserRouter>
       <UserChoiceContextProvider>
