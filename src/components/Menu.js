@@ -5,11 +5,11 @@ import Welcome from "./Welcome";
 
 const items = [
   {
-    label: <a href="/home">Curls Gone Wild</a>,
+    label: <a href="/">Curls Gone Wild</a>,
     key: "logo",
   },
   {
-    label: <a href="/home">Home</a>,
+    label: <a href="/">Home</a>,
     key: "home",
   },
 
