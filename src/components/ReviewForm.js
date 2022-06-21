@@ -73,7 +73,7 @@ export default function ReviewForm() {
               ></textarea>
             </label>
             <br />
-            <button id="btns" type="submit" onClick={() => handleSubmit()}>
+            <button id="btns" type="submit">
               Submit
             </button>
           </form>

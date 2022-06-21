@@ -2,7 +2,6 @@
   line-height: inherit;
   background-color: rebeccapurple;
   display: flex;
-  align-content: space-between;
   justify-content: center;
   font-family: "Bebas Neue", cursive;
   font-size: 2rem;
@@ -11,4 +10,17 @@
 
 .ant-menu-horizontal > .ant-menu-item a {
   color: rgb(255 255 255 / 85%);
+}
+
+.menubar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.outer-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rebeccapurple;
 }

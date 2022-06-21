@@ -28,14 +28,19 @@ const Template = () => {
   };
 
   return (
-    <Menu
-      onClick={onClick}
-      selectedKeys={[current]}
-      mode="horizontal"
-      items={items}
-    >
-      <Welcome />
-    </Menu>
+    <div className="outer-div">
+      <div className="menubar">
+        <Menu
+          onClick={onClick}
+          selectedKeys={[current]}
+          mode="horizontal"
+          items={items}
+        />
+      </div>
+      <div>
+        <Welcome />
+      </div>
+    </div>
   );
 };
 
