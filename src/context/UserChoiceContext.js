@@ -19,3 +19,5 @@ export function UserChoiceContextProvider({ children }) {
 
   return <Provider value={value}>{children}</Provider>;
 }
+
+// the states are being passed to the children of the provider through the use of the props syntax

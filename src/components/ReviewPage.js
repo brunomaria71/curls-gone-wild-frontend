@@ -19,11 +19,11 @@ export default function ReviewPage() {
         <div id="page-box">
           <h2 className="review-title">See What Others Are Saying</h2>
           <Carousel autoplay key={reviews.id}>
-            {[...reviews].reverse().map((reviews) => {
+            {[...reviews].reverse().map((review) => {
               return (
                 <div>
                   <h3 className="review-testimonies">
-                    {reviews.name} - {reviews.reviewOfResults}
+                    {review.name} - {review.reviewOfResults}
                   </h3>
                 </div>
               );
